@@ -4,10 +4,40 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>VideoCall</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h2> 1.Start your webcam</h2>
+    <div class="Videos">
+      <span>
+        <h3> Local Stream</h3>
+        <video id=""webcamvideo" autoplay playsinline></video>
+
+      </span>
+      <span>
+        <h3>Remote Stream</h3>
+        <video id="Remote Stream" autoplay playsinline></video>
+      </span>
+    </div>    
+
+
+    <button id="WebCamButton">Start webcam</button>
+    <h2>2.Create a new call</h2>
+    <button id ="CallButton" disabled>Create Call (offer)</button>
+
+    <h2>3.Join a call</h2>
+    <p>Answer the call from a different browser window or device</p>
+
+    <input id="CallInput" placeholder="Paste the call ID here" />
+    <button id="AnswerButton" disabled>Answer</button>
+
+    <h2>4.Hang up</h2>
+    <button id="HangUpButton" disabled>Hang Up</button>
+
+
+
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
